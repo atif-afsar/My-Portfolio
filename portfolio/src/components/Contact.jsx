@@ -147,7 +147,7 @@ const Contact = () => {
               </h3>
               <div className="flex gap-4">
                 <motion.a
-                  href="https://github.com/yourusername"
+                  href="https://github.com/atif-afsar"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-10 h-10 rounded-lg bg-gray-100 dark:bg-gray-800 flex items-center justify-center text-gray-600 dark:text-gray-300 hover:bg-blue-100 dark:hover:bg-blue-900 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
@@ -157,7 +157,7 @@ const Contact = () => {
                   <FaGithub className="w-5 h-5" />
                 </motion.a>
                 <motion.a
-                  href="https://linkedin.com/in/yourusername"
+                  href="https://www.linkedin.com/in/atif-afsar-64903b33a/?originalSubdomain=in"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-10 h-10 rounded-lg bg-gray-100 dark:bg-gray-800 flex items-center justify-center text-gray-600 dark:text-gray-300 hover:bg-blue-100 dark:hover:bg-blue-900 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
