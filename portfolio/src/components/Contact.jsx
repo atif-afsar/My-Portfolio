@@ -180,7 +180,7 @@ const Contact = () => {
             <h3 className="text-xl sm:text-2xl font-bold text-gray-900 dark:text-white mb-6">
               Send Me a Message
             </h3>
-            <form onSubmit={handleSubmit} className="space-y-4 sm:space-y-6">
+            <form ref={form} onSubmit={handleSubmit} className="space-y-4 sm:space-y-6">
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6">
                 <div>
                   <label htmlFor="name" className="block text-sm sm:text-base font-medium text-gray-700 dark:text-gray-300 mb-2">
@@ -262,6 +262,27 @@ const Contact = () => {
                   </>
                 )}
               </motion.button>
+              
+              {/* Success/Error Messages */}
+              {submitStatus === 'success' && (
+                <motion.div
+                  initial={{ opacity: 0, y: 10 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  className="p-4 bg-green-100 dark:bg-green-900 border border-green-400 dark:border-green-600 text-green-700 dark:text-green-300 rounded-xl"
+                >
+                  Message sent successfully! I'll get back to you soon.
+                </motion.div>
+              )}
+              
+              {submitStatus === 'error' && (
+                <motion.div
+                  initial={{ opacity: 0, y: 10 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  className="p-4 bg-red-100 dark:bg-red-900 border border-red-400 dark:border-red-600 text-red-700 dark:text-red-300 rounded-xl"
+                >
+                  Failed to send message. Please try again or contact me directly via email.
+                </motion.div>
+              )}
             </form>
           </motion.div>
         </div>
