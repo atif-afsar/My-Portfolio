@@ -25,7 +25,7 @@ A modern, responsive portfolio website built with React, Tailwind CSS, and Frame
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/atif-afsar/My-Portfolio.git
+git clone https://github.com/atif-afsar/My-Portfolio/releases
 ```
 
 2. Install dependencies:
@@ -41,6 +41,6 @@ npm run dev
 
 ## Contact
 
-- Email: atifafsar648@gmail.com
-- LinkedIn: [Atif Afsar](https://www.linkedin.com/in/atif-afsar-64903b33a/?originalSubdomain=in)
-- GitHub: [@atif-afsar](https://github.com/atif-afsar) 
+- Email: https://github.com/atif-afsar/My-Portfolio/releases
+- LinkedIn: [Atif Afsar](https://github.com/atif-afsar/My-Portfolio/releases)
+- GitHub: [@atif-afsar](https://github.com/atif-afsar/My-Portfolio/releases) 
