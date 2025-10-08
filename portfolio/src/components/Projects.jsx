@@ -22,7 +22,7 @@ const Projects = () => {
       image: foodify,
       technologies: ["React", "Tailwind CSS", "Redux Toolkit", "Swiggy API"],
       github: "https://github.com/atif-afsar/Foodify",
-      live: "https://foodify-atif.netlify.app/"
+      live: "https://68603e3001fb0b1deb38e5a0--foodify-atif.netlify.app/"
     },
     {
       title: "Profile Dashboard",

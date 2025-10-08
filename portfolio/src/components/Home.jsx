@@ -37,7 +37,7 @@ const Home = () => {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: 0.3 }}
               >
-                Frontend Developer / B.Tech CSE Student
+                Full Stack Developer / B.Tech CSE Student
               </motion.h2>
               <motion.p 
                 className="text-base sm:text-lg md:text-xl text-gray-600 dark:text-gray-400 max-w-2xl mx-auto lg:mx-0"

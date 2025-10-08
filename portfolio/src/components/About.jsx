@@ -1,5 +1,5 @@
-import React from 'react';
-import { motion } from 'framer-motion';
+import React from "react";
+import { motion } from "framer-motion";
 import {
   FaCode,
   FaReact,
@@ -19,8 +19,8 @@ import {
   FaClock,
   FaLightbulb,
   FaCheckCircle,
-} from 'react-icons/fa';
-import { SiMongodb, SiRedux, SiTailwindcss, SiFirebase } from 'react-icons/si';
+} from "react-icons/fa";
+import { SiMongodb, SiRedux, SiTailwindcss, SiFirebase } from "react-icons/si";
 
 const About = () => {
   const technicalSkills = [
@@ -40,7 +40,11 @@ const About = () => {
 
   const coreSubjects = [
     { icon: FaBrain, name: "Data Structures & Algorithms", level: "Advanced" },
-    { icon: FaDatabase, name: "Database Management Systems", level: "Intermediate" },
+    {
+      icon: FaDatabase,
+      name: "Database Management Systems",
+      level: "Intermediate",
+    },
     { icon: FaTools, name: "Machine Learning", level: "Intermediate" },
   ];
 
@@ -58,9 +62,9 @@ const About = () => {
     visible: {
       opacity: 1,
       transition: {
-        staggerChildren: 0.1
-      }
-    }
+        staggerChildren: 0.1,
+      },
+    },
   };
 
   const itemVariants = {
@@ -69,9 +73,9 @@ const About = () => {
       opacity: 1,
       y: 0,
       transition: {
-        duration: 0.5
-      }
-    }
+        duration: 0.5,
+      },
+    },
   };
 
   const SkillCard = ({ icon: Icon, name, level }) => (
@@ -120,7 +124,10 @@ const About = () => {
   );
 
   return (
-    <section id="about" className="py-12 sm:py-16 md:py-20 lg:py-24 bg-gray-50 dark:bg-gray-900">
+    <section
+      id="about"
+      className="py-12 sm:py-16 md:py-20 lg:py-24 bg-gray-50 dark:bg-gray-900"
+    >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           variants={itemVariants}
@@ -144,10 +151,19 @@ const About = () => {
             className="space-y-4 sm:space-y-6 bg-white dark:bg-gray-800 rounded-2xl sm:rounded-3xl p-6 sm:p-8 md:p-10 lg:p-12 shadow-lg border border-gray-200 dark:border-gray-700"
           >
             <h3 className="text-xl sm:text-2xl md:text-3xl font-semibold text-gray-800 dark:text-white">
-              Frontend Developer & B.Tech CSE Student
+              Full Stack Developer & B.Tech CSE Student
             </h3>
             <p className="text-base sm:text-lg text-gray-600 dark:text-gray-300 leading-relaxed">
-              I'm a highly motivated and detail-oriented B.Tech CSE student with a passion for frontend development and building modern web applications. With hands-on experience in React, Tailwind CSS, and animation libraries like Framer Motion and GSAP, I specialize in crafting responsive, interactive user experiences. I thrive on solving real-world problems through clean, maintainable code and continuously exploring new technologies to stay ahead in the evolving web landscape.
+              I'm a highly motivated and detail-oriented Full Stack Developer and
+              B.Tech CSE student with a passion for building modern, scalable
+              web applications. I specialize in creating seamless user
+              experiences with React, Tailwind CSS, Framer Motion, and GSAP,
+              while also developing robust backend systems using Node.js,
+              Express, and MongoDB. I thrive on solving real-world problems
+              through clean, maintainable, and efficient code, ensuring both
+              performance and visual excellence. Always eager to learn and
+              explore emerging technologies, I aim to bridge design and
+              functionality to deliver impactful digital experiences.
             </p>
             <div className="flex flex-wrap gap-3 sm:gap-4">
               <motion.a
@@ -171,9 +187,21 @@ const About = () => {
           </motion.div>
 
           <div className="space-y-8 sm:space-y-12 md:space-y-16 bg-white dark:bg-gray-800 rounded-2xl sm:rounded-3xl p-6 sm:p-8 md:p-10 lg:p-12 shadow-lg border border-gray-200 dark:border-gray-700">
-            <SkillSection title="Technical Skills" skills={technicalSkills} icon={FaCode} />
-            <SkillSection title="Core Subjects" skills={coreSubjects} icon={FaBrain} />
-            <SkillSection title="Soft Skills" skills={softSkills} icon={FaUsers} />
+            <SkillSection
+              title="Technical Skills"
+              skills={technicalSkills}
+              icon={FaCode}
+            />
+            <SkillSection
+              title="Core Subjects"
+              skills={coreSubjects}
+              icon={FaBrain}
+            />
+            <SkillSection
+              title="Soft Skills"
+              skills={softSkills}
+              icon={FaUsers}
+            />
           </div>
         </div>
       </div>
