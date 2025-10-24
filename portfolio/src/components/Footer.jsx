@@ -19,7 +19,7 @@ const Footer = () => {
           >
             <h3 className="text-xl font-bold text-white">About Me</h3>
             <p className="text-sm sm:text-base">
-              A passionate frontend developer and B.Tech CSE student, focused on creating beautiful and functional web applications.
+            A passionate full-stack developer and B.Tech CSE student, dedicated to building scalable, functional, and visually appealing web applications.
             </p>
           </motion.div>
 

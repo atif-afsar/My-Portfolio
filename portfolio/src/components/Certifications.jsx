@@ -4,10 +4,20 @@ import { FaAward, FaCertificate, FaExternalLinkAlt } from 'react-icons/fa';
 import namasteReact from '../assets/c1.png';
 import ibmWebDev from '../assets/c2.png';
 import freeCodeCamp from '../assets/c3.png';
-import ibmSkills from '../assets/c4.png';
+import Intern from '../assets/c4.png';
+import Hackathon from '../assets/Hackathon.jpg';
+import Cohort from '../assets/cohort.jpg';
 
 const Certifications = () => {
   const certifications = [
+    {
+      title: "Full Stack Development Intern",
+      issuer: "InLighnX Global Pvt. Ltd.",
+      date: "July 2025 – October 2024",
+      credentialId: "Internship Certificate",
+      image: Intern,
+      link: Intern
+    },
     {
       title: "Namaste React",
       issuer: "Akshay Saini",
@@ -33,12 +43,20 @@ const Certifications = () => {
       link: freeCodeCamp
     },
     {
-      title: "Professional Skills",
-      issuer: "IBM",
-      date: "2024",
-      credentialId: "IBM Professional Skills",
-      image: ibmSkills,
-      link: ibmSkills
+      title: "National Showdown of Code & Creativity",
+      issuer: "Sheriyans Coding School",
+      date: "Aug 2025",
+      credentialId: "Issued by Sheriyans Coding School",
+      image: Hackathon,
+      link: Hackathon
+    },
+    {
+      title: "Job Ready Cohort - Certificate of Completion",
+      issuer: "Sheriyans Coding School",
+      date: "Sep 2025",
+      credentialId: "Issued by Sheriyans Coding School",
+      image: Cohort,
+      link: Cohort
     }
   ];
 

@@ -1,10 +1,13 @@
 import React from 'react';
-import { motion } from 'framer-motion';
+import { m, motion } from 'framer-motion';
 import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa';
 import youtubeClone from '../assets/image.png';
 import foodify from '../assets/Screenshot 2025-06-17 214119.png';
-import profileDashboard from '../assets/Screenshot 2025-06-17 215217.png';
-import ochiClone from '../assets/Screenshot 2025-06-17 220055.png';
+import Nasa from '../assets/nasa.png';
+import ochiClone from '../assets/ochi.png';
+import moodyPlayer from '../assets/Moody-player.png';
+import netflixGpt from '../assets/netflix.png';
+
 
 const Projects = () => {
   const projects = [
@@ -25,10 +28,10 @@ const Projects = () => {
       live: "https://68603e3001fb0b1deb38e5a0--foodify-atif.netlify.app/"
     },
     {
-      title: "Profile Dashboard",
-      description: "A sleek and responsive dashboard with reusable UI components, interactive map integration, dynamic search/filter, admin controls, and profile views.",
-      image: profileDashboard,
-      technologies: ["React", "Tailwind CSS", "React Router"],
+      title: "NASA Project — Mission Control Web App",
+      description: "Built a React + Node.js dashboard with MongoDB to manage rocket launches, astronaut data, and telemetry, including RESTful APIs, authentication, and role-based access. Implemented real-time updates, Docker deployment, and advanced JS patterns for efficient, full-stack mission control operations.",
+      image: Nasa,
+      technologies: ["React", "Node.js", "Role-based Access Control", "Real-time Updates", "React Router", "fetch"],
       github: "https://github.com/atif-afsar/Profile-Dashboard",
       live: "https://profile-deshboard.netlify.app/"
     },
@@ -39,6 +42,23 @@ const Projects = () => {
       technologies: ["React.js", "Tailwind CSS", "Framer Motion", "GSAP", "Locomotive Scroll"],
       github: "https://github.com/atif-afsar/ochi",
       live: "https://ochi-clone-design.netlify.app/"
+    },
+     {
+      title: "Moody Player",
+      description: "Built a mood-based music player using React, Node.js, Face API, MongoDB, and ImageKit, detecting user emotions in real-time to play personalized songs. Managed user data, playlists, and optimized images while delivering an interactive, engaging UI.",
+      image: moodyPlayer,
+      technologies: ["React.js", "Tailwind CSS", "Node.js", "Face API", "MongoDB", "ImageKit"],
+      github: "https://github.com/atif-afsar/Moody-Player",
+     
+    },
+    {
+      title: "Netflix-GPT — AI-Powered Movie Recommendation App",
+      description: "Built a React + Vite web app with GPT-powered movie search, Firebase authentication, and personalized user profiles, delivering a modern, responsive, and accessible UI. Implemented Tailwind CSS, Redux Toolkit, and AI integration for fast, natural language-based movie recommendations.",
+      image: netflixGpt,
+      technologies: ["React.js", "Tailwind CSS", "Redux Toolkit", "Firebase", "OpenAI API"],
+      github: "https://github.com/atif-afsar/netflix-gpt",
+       live: "https://gpt-netfli.netlify.app/"
+     
     }
   ];
 

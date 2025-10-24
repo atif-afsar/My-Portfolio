@@ -1,8 +1,22 @@
-import React, { useCallback } from 'react';
-import { motion } from 'framer-motion';
-import { FaGithub, FaLinkedin, FaMapMarkerAlt, FaEnvelope, FaPhone } from 'react-icons/fa';
-import { SiReact, SiNodedotjs, SiJavascript, SiPython, SiTypescript, SiTailwindcss } from 'react-icons/si';
-import profileImage from '../assets/profile.jpeg';
+import React, { useCallback } from "react";
+import { Typewriter } from "react-simple-typewriter";
+import { motion } from "framer-motion";
+import {
+  FaGithub,
+  FaLinkedin,
+  FaMapMarkerAlt,
+  FaEnvelope,
+  FaPhone,
+} from "react-icons/fa";
+import {
+  SiReact,
+  SiNodedotjs,
+  SiJavascript,
+  SiPython,
+  SiTypescript,
+  SiTailwindcss,
+} from "react-icons/si";
+import profileImage from "../assets/profile.jpeg";
 import Particles from "react-tsparticles";
 import { loadSlim } from "tsparticles-slim";
 
@@ -12,7 +26,10 @@ const Home = () => {
   }, []);
 
   return (
-    <section id="home" className="min-h-screen flex items-center justify-center py-12 sm:py-16 md:py-20 lg:py-24 bg-white dark:bg-gray-900 relative overflow-hidden">
+    <section
+      id="home"
+      className="min-h-screen flex items-center justify-center py-12 sm:py-16 md:py-20 lg:py-24 bg-white dark:bg-gray-900 relative overflow-hidden"
+    >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-12 lg:gap-16 items-center">
           {/* Text Content */}
@@ -23,34 +40,52 @@ const Home = () => {
             className="text-center lg:text-left space-y-6 sm:space-y-8 relative z-10"
           >
             <div className="space-y-4 sm:space-y-6">
-              <motion.h1 
+              <motion.h1
                 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 dark:text-white"
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: 0.2 }}
               >
-                Hi, I'm <span className="text-blue-600 dark:text-blue-400">Atif Afsar</span>
+                Hi, I'm{" "}
+                <span className="text-blue-600 dark:text-blue-400">
+                  Atif Afsar
+                </span>
               </motion.h1>
-              <motion.h2 
-                className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-semibold text-gray-700 dark:text-gray-300"
+              <motion.h2
+                className="text-xl sm:text-2xl md:text-3xl lg:text-2xl font-semibold text-gray-700 dark:text-gray-300"
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: 0.3 }}
               >
-                Full Stack Developer / B.Tech CSE Student
+                <Typewriter
+                  words={[
+                    "Frontend Developer",
+                    "Backend Developer",
+                    "Full Stack Developer",
+                    "Web Developer",
+                    "MERN Developer",
+                  ]}
+                  loop={0} // 0 = infinite
+                  cursor
+                  cursorStyle="|"
+                  typeSpeed={100}
+                  deleteSpeed={50}
+                  delaySpeed={1000}
+                />
               </motion.h2>
-              <motion.p 
+              <motion.p
                 className="text-base sm:text-lg md:text-xl text-gray-600 dark:text-gray-400 max-w-2xl mx-auto lg:mx-0"
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: 0.4 }}
               >
-                I create beautiful and functional web applications with a focus on user experience and clean code.
+                Creating web applications that are visually appealing, highly
+                interactive, and fully scalable.
               </motion.p>
             </div>
-            
+
             {/* Contact Info */}
-            <motion.div 
+            <motion.div
               className="flex flex-wrap justify-center lg:justify-start gap-3 sm:gap-4"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}

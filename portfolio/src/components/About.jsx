@@ -3,58 +3,49 @@ import { motion } from "framer-motion";
 import {
   FaCode,
   FaReact,
-  FaPalette,
-  FaMobile,
+  
   FaServer,
   FaTools,
   FaDatabase,
   FaGitAlt,
   FaJs,
-  FaPython,
-  FaJava,
   FaNodeJs,
-  FaFire,
   FaBrain,
   FaUsers,
   FaClock,
   FaLightbulb,
-  FaCheckCircle,
 } from "react-icons/fa";
 import { SiMongodb, SiRedux, SiTailwindcss, SiFirebase } from "react-icons/si";
 
 const About = () => {
   const technicalSkills = [
-    { icon: FaJs, name: "JavaScript", level: "Advanced" },
-    { icon: FaPython, name: "Python", level: "Intermediate" },
-    { icon: FaJava, name: "Java", level: "Intermediate" },
-    { icon: FaReact, name: "React.js", level: "Advanced" },
-    { icon: FaNodeJs, name: "Node.js", level: "Intermediate" },
-    { icon: FaServer, name: "Express.js", level: "Intermediate" },
-    { icon: SiMongodb, name: "MongoDB", level: "Intermediate" },
-    { icon: FaGitAlt, name: "Git", level: "Advanced" },
-    { icon: FaGitAlt, name: "GitHub", level: "Advanced" },
-    { icon: SiTailwindcss, name: "Tailwind CSS", level: "Advanced" },
-    { icon: SiRedux, name: "Redux Toolkit", level: "Intermediate" },
-    { icon: SiFirebase, name: "Firebase", level: "Intermediate" },
+    { icon: FaJs, name: "JavaScript", },
+    { icon: FaReact, name: "React.js",},
+    { icon: FaNodeJs, name: "Node.js", },
+    { icon: FaServer, name: "Express.js"},
+    { icon: SiMongodb, name: "MongoDB",  },
+    { icon: FaGitAlt, name: "Git"},
+    { icon: FaGitAlt, name: "GitHub" },
+    { icon: SiTailwindcss, name: "Tailwind CSS" },
+    { icon: SiRedux, name: "Redux Toolkit" },
+    { icon: SiFirebase, name: "Firebase" },
   ];
 
   const coreSubjects = [
-    { icon: FaBrain, name: "Data Structures & Algorithms", level: "Advanced" },
+    { icon: FaBrain, name: "Data Structures & Algorithms" },
     {
       icon: FaDatabase,
       name: "Database Management Systems",
-      level: "Intermediate",
+      
     },
-    { icon: FaTools, name: "Machine Learning", level: "Intermediate" },
+    { icon: FaTools, name: "Machine Learning"},
   ];
 
   const softSkills = [
-    { icon: FaLightbulb, name: "Problem-Solving", level: "Advanced" },
-    { icon: FaUsers, name: "Teamwork", level: "Advanced" },
-    { icon: FaUsers, name: "Communication", level: "Advanced" },
-    { icon: FaClock, name: "Time Management", level: "Advanced" },
-    { icon: FaCheckCircle, name: "Adaptability", level: "Advanced" },
-    { icon: FaCheckCircle, name: "Attention to Detail", level: "Advanced" },
+    { icon: FaLightbulb, name: "Problem-Solving" },
+    { icon: FaUsers, name: "Teamwork" },
+    { icon: FaUsers, name: "Communication" },
+    { icon: FaClock, name: "Time Management" },
   ];
 
   const containerVariants = {
@@ -153,18 +144,20 @@ const About = () => {
             <h3 className="text-xl sm:text-2xl md:text-3xl font-semibold text-gray-800 dark:text-white">
               Full Stack Developer & B.Tech CSE Student
             </h3>
-            <p className="text-base sm:text-lg text-gray-600 dark:text-gray-300 leading-relaxed">
-              I'm a highly motivated and detail-oriented Full Stack Developer and
-              B.Tech CSE student with a passion for building modern, scalable
-              web applications. I specialize in creating seamless user
-              experiences with React, Tailwind CSS, Framer Motion, and GSAP,
-              while also developing robust backend systems using Node.js,
-              Express, and MongoDB. I thrive on solving real-world problems
-              through clean, maintainable, and efficient code, ensuring both
-              performance and visual excellence. Always eager to learn and
-              explore emerging technologies, I aim to bridge design and
-              functionality to deliver impactful digital experiences.
+            <p className="text-base sm:text-lg text-gray-600 dark:text-gray-300 leading-relaxed mt-4">
+              I am a Full Stack Developer and B.Tech CSE student passionate
+              about designing and building modern, scalable web applications. I
+              specialize in creating seamless frontend experiences with React
+              and Tailwind CSS, while developing robust backend systems using
+              Node.js, Express, and MongoDB. Additionally, I integrate
+              AI-powered features to deliver intelligent, dynamic user
+              experiences. Focused on clean, maintainable, and efficient code, I
+              solve real-world problems and ensure high performance across the
+              full stack. Continuously exploring emerging technologies, I aim to
+              bridge frontend design, backend functionality, and AI innovation
+              to deliver impactful end-to-end digital solutions.
             </p>
+
             <div className="flex flex-wrap gap-3 sm:gap-4">
               <motion.a
                 href="#contact"
@@ -175,7 +168,7 @@ const About = () => {
                 Contact Me
               </motion.a>
               <motion.a
-                href="/assets/resume.pdf"
+                href="/assets/resume1.pdf"
                 download="Atif_Afsar_Resume.pdf"
                 className="px-5 sm:px-6 md:px-8 py-2.5 sm:py-3 border-2 border-blue-600 text-blue-600 dark:text-blue-400 text-sm sm:text-base font-medium rounded-lg hover:bg-blue-50 dark:hover:bg-blue-900/20 transition-colors hoverable shadow-sm hover:shadow-md"
                 whileHover={{ scale: 1.02 }}
