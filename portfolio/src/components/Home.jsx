@@ -16,7 +16,7 @@ import {
   SiTypescript,
   SiTailwindcss,
 } from "react-icons/si";
-import profileImage from "../assets/profile.jpeg";
+import profileImage from "../assets/profile1.jpg";
 import Particles from "react-tsparticles";
 import { loadSlim } from "tsparticles-slim";
 

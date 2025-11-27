@@ -25,7 +25,7 @@ const Projects = () => {
       image: foodify,
       technologies: ["React", "Tailwind CSS", "Redux Toolkit", "Swiggy API"],
       github: "https://github.com/atif-afsar/Foodify",
-      live: "https://68603e3001fb0b1deb38e5a0--foodify-atif.netlify.app/"
+      live: "https://foodify-atif.netlify.app"
     },
     {
       title: "NASA Project — Mission Control Web App",
@@ -33,7 +33,7 @@ const Projects = () => {
       image: Nasa,
       technologies: ["React", "Node.js", "Role-based Access Control", "Real-time Updates", "React Router", "fetch"],
       github: "https://github.com/atif-afsar/Profile-Dashboard",
-      live: "https://profile-deshboard.netlify.app/"
+      // live: "https://profile-deshboard.netlify.app/"
     },
     {
       title: "Ochi Site Clone",
